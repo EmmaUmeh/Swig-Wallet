@@ -120,12 +120,12 @@ class ActionButtons extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         ActionButton(
-          icon: Icons.qr_code_scanner,
+          icon: Icons.qr_code_2,
           label: 'Receive',
           onTap: () {},
         ),
         ActionButton(
-          icon: Icons.send,
+          icon: Icons.near_me,
           label: 'Send',
           onTap: () {},
         ),
@@ -135,7 +135,7 @@ class ActionButtons extends StatelessWidget {
           onTap: () {},
         ),
         ActionButton(
-          icon: Icons.account_balance_wallet,
+          icon: Icons.attach_money_sharp,
           label: 'Buy',
           onTap: () {},
         ),
@@ -171,7 +171,7 @@ class ActionButton extends StatelessWidget {
             child: Icon(
               icon,
               color: Colors.white,
-              size: 24,
+              size: 30,
             ),
           ),
           const SizedBox(height: 8),
@@ -216,7 +216,9 @@ class NotificationCard extends StatelessWidget {
               'Create your @username: A unique identity for your wallet',
               style: TextStyle(
                 color: Colors.white,
+                fontWeight: FontWeight.bold,
                 fontSize: 14,
+
               ),
             ),
           ),
@@ -280,6 +282,7 @@ class CustomBottomNavBar extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: const Color(0xFF252525),
+               
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
@@ -297,11 +300,11 @@ class CustomBottomNavBar extends StatelessWidget {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.grid_view), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.swap_horiz), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.history), label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.settings), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.add_home_rounded, size: 35,), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.grid_view, size: 35,), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.swap_horiz_sharp, size: 35,), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.history, size: 35,), label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.settings, size: 35,), label: ''),
         ],
       ),
     );
